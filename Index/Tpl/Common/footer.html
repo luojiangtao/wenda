@@ -1,0 +1,72 @@
+<!-- 底部开始 -->
+<div class="panel panel-default">
+    <div class="panel-footer text-center">
+        <p class="muted">Copyright © 2013 houdunwang.Com All Rights Reserved 后盾网</p>
+        <p class="muted">京ICP备10027771号-1</p>
+    </div>
+</div>
+<!-- 底部结束 -->
+<!-- 登录弹出框开始 -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="{:U('Common/login')}" class="form-inline" method='post'>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">登录</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        用户名：
+                        <input class='form-control' name='account' type="text">
+                    </p>
+                    <p class="text-center">
+                        密　码：
+                        <input class='form-control' name='password' type="text">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 登录弹出框结束 -->
+<!-- 注册弹出框开始 -->
+<div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form action="{:U('Common/register')}" class="form-inline" method='post'>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">注册</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">
+                        　用户名：
+                        <input class='form-control' name='account' type="text">
+                    </p>
+                    <p class="text-center">
+                        　用户名：
+                        <input class='form-control' name='username' type="text">
+                    </p>
+                    <p class="text-center">
+                        　密　码：
+                        <input class='form-control' name='password' type="text">
+                    </p>
+                    <p class="text-center">
+                        确认密码：
+                        <input class='form-control' name='repassword' type="text">
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-primary">注册</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 注册弹出框结束 -->

@@ -1,0 +1,35 @@
+<?php
+    $db=M('category');
+    $category=$db->where(array('pid'=>0))->select();
+    foreach($category as $k=>$v){
+        $category[$k]['child']=$db->where(array('pid'=>$v['id']))->select();
+    }
+    //p($category);
+?>
+
+<!-- 左边开始 -->
+            <div class="col-md-3 panel panel-default">
+                <foreach name='category' item='v'>
+                    <div class="row">
+                        <div class="col-md-12"><a href="{:U('List/index',array('id'=>$v['id']))}">{$v.name}</a></div>
+                        <for start='0' end='3' name='i'>
+                            <div class="col-md-3"><a href="{:U('List/index',array('id'=>$v['child'][$i]['id']))}">{$v['child'][$i]['name']}</a></div>
+                        </for>
+                        <div class="col-md-3">
+                            <!-- Single button -->
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <for start='3' end="count($v['child'])" name='i'>
+                                        <li><a href="{:U('List/index',array('id'=>$v['child'][$i]['id']))}">{$v['child'][$i]['name']}</a></li>
+                                    </for>  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </foreach>
+            </div>
+            <!-- 左边结束 -->

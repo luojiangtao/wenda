@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>网站设置</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.css">
+    <link rel="stylesheet" href="__PUBLIC__/css/admin_index.css">
+    <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="panel panel-info">
+        <div class="panel-heading text-center">
+            网站设置
+        </div>
+        <form action="{:U('Reward/editConfig')}" method="post" class="form-inline">
+            <table class="table table-bordered table-hover">
+                <tr>
+                    <td class='text-right' width="50%">网站名称：</td>
+                    <td>
+                        <input class='form-control' type="text" name='WEBNAME' value="{$Think.config.WEBNAME}" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right' width="50%">网站关键字：</td>
+                    <td>
+                        <input class='form-control' type="text" name='KEYWORDS' value="{$Think.config.KEYWORDS}" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right' width="50%">网站描述：</td>
+                    <td>
+                        <input class='form-control' type="text" name='DISCRIPTION' value="{$Think.config.DISCRIPTION}" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right' width="50%">版权信息：</td>
+                    <td>
+                        <input class='form-control' type="text" name='COPY' value="{$Think.config.COPY}" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right' width="50%">备案号：</td>
+                    <td>
+                        <input class='form-control' type="text" name='RECORD' value="{$Think.config.RECORD}" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right' width="50%">是否开放注册：</td>
+                    <td>
+                       开放：<input class='form-control' type="radio" name='REGIS_ON' value="1" <if condition="$Think.config.REGIS_ON eq 1">checked="checked"</if>/>
+                       关闭：<input class='form-control' type="radio" name='REGIS_ON' value="0"  <if condition="$Think.config.REGIS_ON eq 0">checked="checked"</if>/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class='text-right' width="50%">网站状态：</td>
+                    <td>
+                       开放：<input class='form-control' type="radio" name='WEB_STATE' value="1" <if condition="$Think.config.WEB_STATE eq 1">checked="checked"</if>/>
+                       维护中：<input class='form-control' type="radio" name='WEB_STATE' value="0" <if condition="$Think.config.WEB_STATE eq 0">checked="checked"</if>/>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td colspan='2'>
+                        <input class='btn btn-info' type="submit" value="确定">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
