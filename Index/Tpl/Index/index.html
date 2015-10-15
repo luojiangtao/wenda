@@ -1,11 +1,11 @@
-<include file='Common:header'/>
+<include file='Common:header' />
 
 <body>
-    <include file='Common:top'/>
+    <include file='Common:top' />
     <!-- 主题部分开始 -->
     <div class="container">
         <div class="row">
-            <include file='Common:left'/>
+            <include file='Common:left' />
             <!-- 中间开始 -->
             <div class="col-md-5">
                 <!-- 轮播开始 -->
@@ -54,25 +54,13 @@
                     <div class="col-md-6 text-right">更多>></div>
                 </div>
                 <hr>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
+                <foreach name='ask_unsolve' item='v'>
+                    <div class="row">
+                        <div class="col-md-6">{$v.content}</div>
+                        <div class="col-md-6 text-right text-muted">{$v.answer}回答</div>
+                    </div>
+                    <br>
+                </foreach>
                 <!-- 高悬赏问题开始 -->
                 <hr>
                 <div class="row">
@@ -80,54 +68,21 @@
                     <div class="col-md-6 text-right">更多>></div>
                 </div>
                 <hr>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                    <div class="col-md-6 text-right text-muted">0回答</div>
-                </div>
-                <br>
+                <foreach name='ask_unsolve' item='v'>
+                    <div class="row">
+                        <div class="col-md-6">{$v.content}</div>
+                        <div class="col-md-6 text-right text-muted">{$v.answer}回答</div>
+                    </div>
+                    <br>
+                </foreach>
                 <!-- 高悬赏问题结束 -->
             </div>
             <!-- 中间结束 -->
-            <include file='Common:right'/>
+            <include file='Common:right' />
         </div>
     </div>
     <!-- 主题部分结束 -->
-    <include file='Common:footer'/>
+    <include file='Common:footer' />
 </body>
 
 </html>

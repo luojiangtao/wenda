@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -15,8 +16,8 @@
 
     <script src="__PUBLIC__/js/index_common.js"></script>
 </head>
-
 <body>
+    
     <!-- 导航开始 -->
     <div class="container">
         <nav class="navbar navbar-default">
@@ -71,38 +72,92 @@
     <!-- 主题部分开始 -->
     <div class="container">
         <div class="row">
-            <form action="<?php echo U('Ask/runAddAsk');?>" method="post">
-                <input type="hidden" name='cid' value='0'/>
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <h3>向网友提问</h3>
-                    <textarea name="content" id="" cols="30" rows="4" class='form-control' required></textarea>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <span class='btn btn-xs btn-warning select_category' data-toggle="modal" data-target="#category">选择分类</span>
-                        </div>
-                        <div class="col-md-4 text-right">我的金币：0</div>
-                        <div class="col-md-4 text-right">悬赏
-                            <select name="reward">
-                                <option value="0">0</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="50">50</option>
-                                <option value="80">80</option>
-                                <option value="100">100</option>
-                            </select>
-                        </div>
-                    </div>
+            <!-- 左边开始 -->
+            <div class="col-md-3 panel panel-default">
+                <div class="row">
                     <br>
-                    <p class="text-right">
-                        <input type="submit" class="btn btn-primary" value='提交'>
-                    </p>
+                    <div class="col-md-5 text-center">
+                        <img src="../images/1.jpg" height='50px' width='50px'>
+                    </div>
+                    <div class="col-md-7">
+                        <p><?php echo ($user["username"]); ?></p>
+                        <p class="muted">金币：<?php echo ($user["point"]); ?></p>
+                        <p class="muted">经验值：<?php echo ($user["exp"]); ?></p>
+                    </div>
                 </div>
-                <div class="col-md-3"></div>
-            </form>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 text-center">回答数
+                        <p><?php echo ($user["answer"]); ?></p>
+                    </div>
+                    <div class="col-md-4 text-center">采纳率
+                        <p><?php echo ($user["adopt"]); ?></p>
+                    </div>
+                    <div class="col-md-4 text-center">提问数
+                        <p><?php echo ($user["ask"]); ?></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">我的首页</a>
+                    <a href="#" class="list-group-item">我的提问</a>
+                    <a href="#" class="list-group-item">我的回答</a>
+                    <a href="#" class="list-group-item">我的等级</a>
+                    <a href="#" class="list-group-item">我的金币</a>
+                </div>
+            </div>
+            <!-- 左边结束 -->
+            <!-- 右边开始 -->
+            <div class="col-md-9">
+                <h4 class="text-muted">我的首页</h4>
+                <div class="row">
+                    <div class="col-md-4">金币：<?php echo ($user["point"]); ?></div>
+                    <div class="col-md-4">经验值：<?php echo ($user["exp"]); ?></div>
+                    <div class="col-md-4">采纳率：<?php echo ($user["adopt"]); ?></div>
+                </div>
+                <br>
+                <small>我的提问 <span class="text-muted">(共3条)</span></small>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">标题</div>
+                    <div class="col-md-2">回答</div>
+                    <div class="col-md-4">更新时间</div>
+                </div>
+                <br>
+                <?php if(is_array($ask)): foreach($ask as $key=>$v): ?><div class="row">
+                        <div class="col-md-6"><?php echo ($v["content"]); ?> <span class="text-muted">[<?php echo ($v["name"]); ?>]</span></div>
+                        <div class="col-md-2"><?php echo ($v["answer"]); ?></div>
+                        <div class="col-md-4"><?php echo ($v["time"]); ?></div>
+                    </div>
+                    <br><?php endforeach; endif; ?>
+                <hr>
+                <small>我的回答 <span class="text-muted">(共3条)</span></small>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">标题</div>
+                    <div class="col-md-2">回答</div>
+                    <div class="col-md-4">更新时间</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
+                    <div class="col-md-2">0</div>
+                    <div class="col-md-4">刚刚</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
+                    <div class="col-md-2">0</div>
+                    <div class="col-md-4">刚刚</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
+                    <div class="col-md-2">0</div>
+                    <div class="col-md-4">刚刚</div>
+                </div>
+            </div>
+            <!-- 右边结束 -->
         </div>
     </div>
     <!-- 主题部分结束 -->
@@ -181,39 +236,6 @@
 </div>
 <!-- 注册弹出框结束 -->
 
-    <!-- 分类选择弹出框开始 -->
-    <div class="modal fade" id="category" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">选择分类</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <select name="category" size="16">
-                                <?php if(is_array($category)): foreach($category as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <select name="category" size="16">
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <select name="category" size="16">
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">确定</button>
-                    <!-- <button type="button" class="btn btn-primary">确定</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- 分类选择弹出框结束 -->
     <!-- 底部结束 -->
 </body>
 

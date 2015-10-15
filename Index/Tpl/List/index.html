@@ -1,0 +1,86 @@
+<include file="Common:header" />
+
+<body>
+    <include file="Common:top" />
+    <!-- 主题部分开始 -->
+    <div class="container">
+        <div class="row">
+            <!-- 左边开始 -->
+            <div class="col-md-8">
+                <p>全部分类 > 电脑/网络 > 电脑知识 > 电脑配置 </p>
+                <p>分类查找</p>
+                <div class="row">
+                    <foreach name='category_list' item='v'>
+                        <div class="col-md-4"><a href="{:U('List/index',array('id'=>$v['id']))}">{$v.name}</a></div>
+                    </foreach>
+                </div>
+                <!-- 标签页开始 -->
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">待解决</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">以解决</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">高悬赏</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">零回答</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">标题</div>
+                                <div class="col-md-2 text-right text-muted">回答数</div>
+                                <div class="col-md-4 text-right text-muted">时间</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">.2..</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">..3.</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">..4.</div>
+                    </div>
+                </div>
+                <!-- 标签页结束 -->
+            </div>
+            <!-- 左边结束 -->
+            <!-- 右边开始 -->
+            <include file="Common:right" />
+            <!-- 右边结束 -->
+        </div>
+    </div>
+    <!-- 主题部分结束 -->
+    <!-- 底部开始 -->
+    <include file="Common:footer" />
+    <!-- 底部结束 -->
+</body>
+
+</html>

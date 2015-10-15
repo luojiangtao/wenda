@@ -1,0 +1,2959 @@
+[ 2015-10-15T09:27:21+08:00 ] 0.0.0.0 /wenda/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000796s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:1.806723s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:1.836560s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000809s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.001278s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.001025s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000781s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000801s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000729s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000664s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000682s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000835s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000873s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000753s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000875s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000788s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000665s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000945s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:9.591181s ]
+INFO: [ view_parse ] --END-- [ RunTime:9.591460s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001883s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000967s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000499s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004741s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000930s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001095s ]
+
+[ 2015-10-15T09:29:04+08:00 ] 0.0.0.0 /wenda/index.php/Ask/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002022s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002216s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.018125s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000345s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000471s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.468092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.468244s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000621s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000409s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000290s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002082s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-10-15T09:29:09+08:00 ] 0.0.0.0 /wenda/index.php/Ask/getCategoryChild.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000718s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000852s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000569s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010562s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000307s ]
+
+[ 2015-10-15T09:29:18+08:00 ] 0.0.0.0 /wenda/index.php/Common/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000621s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.518959s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `account` = '' ) LIMIT 1   [ RunTime:0.000448s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.085234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085450s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000654s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000715s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002982s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000866s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2015-10-15T09:29:27+08:00 ] 0.0.0.0 /wenda/index.php/Common/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001539s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001738s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.093854s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `account` = 'taotao' ) LIMIT 1   [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006130s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000351s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000368s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000241s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001701s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000714s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000839s ]
+
+[ 2015-10-15T09:29:28+08:00 ] 0.0.0.0 /wenda/index.php/Ask/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001407s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013359s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000360s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000480s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035387s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000629s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000834s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003631s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000673s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2015-10-15T09:29:36+08:00 ] 0.0.0.0 /wenda/index.php/Ask/getCategoryChild.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000611s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+NOTIC: 建议使用I方法替代_post
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010006s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000324s ]
+
+[ 2015-10-15T09:29:43+08:00 ] 0.0.0.0 /wenda/index.php/Ask/runAddAsk.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000660s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.736608s ]
+SQL: INSERT INTO `hd_ask` (`cid`,`content`,`reward`,`time`,`uid`) VALUES (12,'房贷首付多少份',0,1444872578,1) [ RunTime:1.742080s ]
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.044655s ]
+SQL: UPDATE `hd_user` SET `ask`=ask+1 WHERE ( `id` = 1 ) [ RunTime:1.830613s ]
+SQL: UPDATE `hd_user` SET `exp`=exp+2 WHERE ( `id` = 1 ) [ RunTime:0.000869s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023128s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001123s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000745s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001367s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005175s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002190s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002626s ]
+
+[ 2015-10-15T09:29:44+08:00 ] 0.0.0.0 /wenda/index.php/Ask/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001249s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001470s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011613s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000394s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000382s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.029535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029737s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000583s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000365s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000236s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000839s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001024s ]
+
+[ 2015-10-15T09:36:30+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001072s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001433s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013142s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000475s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000302s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000380s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000281s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000222s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000299s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000224s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000210s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000271s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000412s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.114059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114251s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001094s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000632s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000638s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003313s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000881s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001042s ]
+
+[ 2015-10-15T09:36:55+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+
+[ 2015-10-15T09:42:04+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.007041s ]
+INFO: [ route_check ] --END-- [ RunTime:0.007229s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001921s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.011652s ]
+SQL: SELECT * FROM `hd_ask` LIMIT 10   [ RunTime:0.000335s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009244s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000460s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000314s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000284s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000233s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000292s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000319s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000474s ]
+NOTIC: [8] Undefined variable: ask_unsolve D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 145 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.181422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.181585s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001675s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001665s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001396s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006816s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005657s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005843s ]
+
+[ 2015-10-15T09:42:05+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001326s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.012261s ]
+SQL: SELECT * FROM `hd_ask` LIMIT 10   [ RunTime:0.000272s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008986s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000434s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000333s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000257s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000301s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000266s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000418s ]
+NOTIC: [8] Undefined variable: ask_unsolve D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 145 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.086471s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086913s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001005s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000530s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000411s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002816s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000604s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2015-10-15T09:43:03+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001394s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.011529s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008900s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000386s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000228s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000285s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000281s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000242s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000340s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.084563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084733s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000952s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000903s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003405s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000627s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000717s ]
+
+[ 2015-10-15T09:44:30+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000866s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.012433s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000326s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.082902s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013119s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000407s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000283s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000246s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000240s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000232s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000399s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.152523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.152815s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000818s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000476s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000296s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002357s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000549s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000631s ]
+
+[ 2015-10-15T09:44:32+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001294s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001502s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.011610s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000293s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009191s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000332s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000498s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000430s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000286s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000304s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000284s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000276s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000372s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000300s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000344s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.080130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080273s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000722s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000568s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000271s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002412s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000713s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2015-10-15T09:45:03+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001083s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001258s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.012399s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000278s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009521s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000354s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000347s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000592s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000235s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000327s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000278s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000282s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000465s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.092409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092561s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000939s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000855s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000818s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004028s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000999s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2015-10-15T09:45:04+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000769s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000918s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.010926s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000291s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000260s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009225s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000383s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000387s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000251s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000274s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000257s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000310s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000303s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000466s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.083584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083780s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001242s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000564s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000437s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003057s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000617s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2015-10-15T09:45:05+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000936s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.010744s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000297s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000255s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009432s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000353s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000307s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000281s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000268s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000413s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.083995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084160s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001129s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001191s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000620s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000476s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003816s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000735s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2015-10-15T09:45:27+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000984s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001126s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.011521s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000294s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000243s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010551s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000309s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000257s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000215s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000203s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000338s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000236s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000209s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000219s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000213s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000212s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000221s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000297s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.102284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102517s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000993s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001513s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000727s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004383s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000741s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2015-10-15T09:47:21+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001915s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002162s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+
+[ 2015-10-15T09:47:50+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001611s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.091557s ]
+ERR: 模板不存在[./Index/Tpl/Member/index.html]
+
+[ 2015-10-15T09:49:53+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000896s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.021985s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008569s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000333s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038794s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001791s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000728s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000449s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004116s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000672s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2015-10-15T09:58:41+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000860s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000780s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.021262s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008582s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000365s ]
+NOTIC: [8] Undefined index: name D:\wamp\www\wenda\Index\Runtime\Cache\229e9d4d2dc754066c0aabe38533f7b2.php 第 83 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037185s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000754s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000566s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000565s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003010s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000877s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2015-10-15T09:59:11+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001179s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001353s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.032262s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009208s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000464s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.077456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077698s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000813s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000507s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002860s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000780s ]
+
+[ 2015-10-15T10:00:27+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001321s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001578s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.023681s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009584s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000358s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.086001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086113s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000615s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000416s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000551s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002177s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000801s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2015-10-15T10:02:27+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000829s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000940s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+
+[ 2015-10-15T10:02:48+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000855s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.022216s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.008734s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `uid` = 1 ) LIMIT 10   [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008714s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000341s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034695s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000634s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000547s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000357s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002455s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001035s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001146s ]
+
+[ 2015-10-15T10:04:58+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001144s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.028203s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.010944s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `uid` = 1 ) LIMIT 10   [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009387s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000343s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040696s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000655s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000414s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002474s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000827s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2015-10-15T11:22:46+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.021176s ]
+INFO: [ route_check ] --END-- [ RunTime:0.021509s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008414s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.071917s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.024085s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `uid` = 1 ) ORDER BY time DESC LIMIT 10   [ RunTime:0.149686s ]
+
+[ 2015-10-15T11:23:30+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001144s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.048879s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.017717s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.031856s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.025007s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) O' at line 1
+ [ SQL语句 ] : SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10  
+
+[ 2015-10-15T11:23:39+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001014s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.030529s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `hd_ask_view_model` [ RunTime:0.023452s ]
+ERR: 1146:Table 'wenda.hd_ask_view_model' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `hd_ask_view_model`
+SQL: SELECT * FROM `hd_ask_view_model` WHERE ( `uid` = '1' ) ORDER BY time DESC LIMIT 10   [ RunTime:0.000552s ]
+ERR: 1146:Table 'wenda.hd_ask_view_model' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `hd_ask_view_model` WHERE ( `uid` = '1' ) ORDER BY time DESC LIMIT 10  
+
+[ 2015-10-15T11:25:12+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001369s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001588s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.031352s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.014315s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.017166s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.000197s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) O' at line 1
+ [ SQL语句 ] : SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10  
+
+[ 2015-10-15T11:25:12+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.034749s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.014326s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.014050s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.000224s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) O' at line 1
+ [ SQL语句 ] : SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10  
+
+[ 2015-10-15T11:25:12+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001087s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.026974s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.009112s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008937s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.000214s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) O' at line 1
+ [ SQL语句 ] : SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10  
+
+[ 2015-10-15T11:25:13+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000846s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001009s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.028352s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.009124s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013117s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.000181s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '_LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) O' at line 1
+ [ SQL语句 ] : SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask _LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10  
+
+[ 2015-10-15T11:26:36+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001734s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001995s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001642s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.026956s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000329s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.010922s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.016342s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.066182s ]
+
+[ 2015-10-15T11:28:08+08:00 ] 0.0.0.0 /wenda/index.php/Member/index/uid/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001379s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001593s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.036193s ]
+SQL: SELECT * FROM `hd_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.013138s ]
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012031s ]
+SQL: SELECT ask.id AS id,ask.content AS content,ask.time AS time,ask.answer AS answer,ask.reward AS reward,category.name AS name FROM hd_ask ask LEFT JOIN hd_category category ON ask.cid = category.id WHERE ( `uid` = '1' ) ORDER BY ask.time DESC LIMIT 10   [ RunTime:0.000501s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000475s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.332850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.333009s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.012394s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.014152s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.007706s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.017692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.052486s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006833s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006952s ]
+
+[ 2015-10-15T11:29:40+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000680s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000812s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.013432s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000266s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000223s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011377s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000272s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000245s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000240s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000256s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000216s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000242s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000231s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000305s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000237s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000295s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000490s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.109365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.109565s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000565s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000402s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000262s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001951s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000458s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2015-10-15T11:54:29+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001407s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+ERR: 模板不存在[./Index/Tpl/List/index.html]
+
+[ 2015-10-15T11:55:12+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002183s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002801s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000817s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 16: parser error : Opening and ending tag mismatch: input line 15 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                         &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                               ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 19: parser error : Opening and ending tag mismatch: div line 14 and form D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                     &lt;/form&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                            ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 24: parser error : Opening and ending tag mismatch: form line 13 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                 &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                       ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 28: parser error : Opening and ending tag mismatch: div line 6 and nav D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:         &lt;/nav&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:               ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 29: parser error : Opening and ending tag mismatch: nav line 5 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:     &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:           ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 124: parser error : Opening and ending tag mismatch: br line 123 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                         &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                               ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 128: parser error : Opening and ending tag mismatch: br line 117 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                     &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                           ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 129: parser error : Opening and ending tag mismatch: br line 111 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                 &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                       ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 131: parser error : Opening and ending tag mismatch: br line 105 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:             &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                   ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Opening and ending tag mismatch: div line 147 and tpl D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag hr line 145 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 143 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 134 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag br line 99 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag br line 93 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag hr line 87 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 86 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 85 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 76 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 61 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 59 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 58 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 4 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag body line 2 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag tag line 1 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag tpl line 1 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+ERR: XML标签语法错误
+
+[ 2015-10-15T11:55:13+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000989s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 16: parser error : Opening and ending tag mismatch: input line 15 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                         &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                               ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 19: parser error : Opening and ending tag mismatch: div line 14 and form D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                     &lt;/form&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                            ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 24: parser error : Opening and ending tag mismatch: form line 13 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                 &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                       ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 28: parser error : Opening and ending tag mismatch: div line 6 and nav D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:         &lt;/nav&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:               ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 29: parser error : Opening and ending tag mismatch: nav line 5 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:     &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:           ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 124: parser error : Opening and ending tag mismatch: br line 123 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                         &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                               ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 128: parser error : Opening and ending tag mismatch: br line 117 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                     &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                           ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 129: parser error : Opening and ending tag mismatch: br line 111 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                 &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                       ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 131: parser error : Opening and ending tag mismatch: br line 105 and div D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:             &lt;/div&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                   ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Opening and ending tag mismatch: div line 147 and tpl D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag hr line 145 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 143 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 134 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag br line 99 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag br line 93 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag hr line 87 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 86 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 85 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 76 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 61 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 59 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 58 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag div line 4 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag body line 2 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag tag line 1 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: Entity: line 148: parser error : Premature end of data in tag tpl line 1 D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]: mg src=&quot;../images/1.jpg&quot; alt=&quot;唯美图片1&quot; height=&quot;50px&quot; width='50px' /&gt;&lt;/tpl&gt; D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+NOTIC: [2] simplexml_load_string() [<a href='function.simplexml-load-string'>function.simplexml-load-string</a>]:                                                                                ^ D:\wamp\www\wenda\ThinkPHP\Lib\Template\ThinkTemplate.class.php 第 286 行.
+ERR: XML标签语法错误
+
+[ 2015-10-15T11:55:20+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000960s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001392s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056491s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000788s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000720s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000508s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005024s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001642s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001863s ]
+
+[ 2015-10-15T11:55:57+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000956s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011391s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000379s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049380s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000599s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000422s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002168s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000592s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-10-15T11:56:00+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000586s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.011527s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000251s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.057830s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000288s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000280s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000250s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000226s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000382s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000245s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000432s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.135371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135536s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000684s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000356s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000232s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001925s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000490s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2015-10-15T11:56:01+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/16.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000740s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010172s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000320s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046797s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000568s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000345s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000230s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001948s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000525s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000609s ]
+
+[ 2015-10-15T11:56:44+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/16.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000939s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011962s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000493s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.047319s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047410s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000557s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000353s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000229s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001900s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000976s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001117s ]
+
+[ 2015-10-15T11:57:06+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001112s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.015665s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000295s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000245s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.008071s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000342s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000401s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000260s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000217s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000228s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000238s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.007233s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000502s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000357s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.089025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089188s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000909s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000492s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002544s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000683s ]
+
+[ 2015-10-15T14:21:55+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.011236s ]
+INFO: [ route_check ] --END-- [ RunTime:0.011391s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015164s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015433s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.024419s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000376s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000248s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.037102s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000636s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000371s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000261s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000273s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000275s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000281s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000317s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000257s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000343s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.170621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170781s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.014210s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005652s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004443s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.006785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.031407s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.005936s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006035s ]
+
+[ 2015-10-15T14:21:57+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000870s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010386s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000339s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051696s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000699s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000566s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000407s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002762s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000743s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-10-15T14:21:59+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001310s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001537s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.018070s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000395s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009870s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000347s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000335s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000222s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000219s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000205s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000186s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000207s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000321s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000330s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000297s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000291s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000239s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000305s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.108166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108337s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000742s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000921s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000859s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003935s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000827s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2015-10-15T14:22:00+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001563s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001777s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001411s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011169s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000323s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.063306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063470s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000838s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000558s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000420s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002782s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2015-10-15T14:22:09+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000907s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010773s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000344s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.056094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056190s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000632s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000472s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000397s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002374s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000788s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2015-10-15T14:22:11+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001445s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001631s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.014793s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000402s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.071849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072050s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001032s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000748s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000590s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003805s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001111s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2015-10-15T14:24:29+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000937s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010210s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000366s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031948s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000716s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000544s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000385s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002625s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001379s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2015-10-15T14:24:56+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001448s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.016946s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000397s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042360s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042529s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000721s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000606s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002683s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000782s ]
+
+[ 2015-10-15T14:25:50+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001222s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013176s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000390s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041158s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000862s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000889s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000526s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003386s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001140s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2015-10-15T14:25:52+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000949s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012049s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000360s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039336s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000766s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000560s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000441s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000767s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002801s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000656s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000743s ]
+
+[ 2015-10-15T14:25:55+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001357s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010689s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000405s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036873s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000742s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000511s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000354s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002511s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000784s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2015-10-15T14:25:57+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001502s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001713s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.014013s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000325s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000492s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045297s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001119s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000804s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000660s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003372s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000778s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-10-15T14:25:59+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001477s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001690s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012983s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000361s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000398s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043482s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000822s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000592s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000438s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002833s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000726s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2015-10-15T14:26:00+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001306s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001479s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001243s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011694s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000370s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000338s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043163s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001068s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000718s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000456s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003249s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000735s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000840s ]
+
+[ 2015-10-15T14:26:29+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/11.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000804s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000925s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000913s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013463s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000311s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000413s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041338s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001226s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000777s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000530s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000789s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003678s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000888s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-15T14:26:29+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000977s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012079s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000301s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000397s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041697s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000893s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000789s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000648s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001216s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003916s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000674s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000762s ]
+
+[ 2015-10-15T14:26:31+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001543s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001765s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001222s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011707s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000424s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035945s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001143s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000840s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000459s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003480s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-10-15T14:26:32+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/5.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012592s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000398s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034214s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000721s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000664s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000393s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002732s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001312s ]
+
+[ 2015-10-15T14:27:55+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001635s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001870s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001733s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.015383s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000384s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000440s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051857s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000839s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000599s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000425s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002838s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000764s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2015-10-15T14:27:57+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001018s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012137s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000381s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000354s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035504s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001068s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000775s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000688s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003279s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2015-10-15T14:27:57+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/5.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001443s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002044s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010594s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000319s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000419s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044122s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000778s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000771s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000698s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000685s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003284s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000722s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2015-10-15T14:27:59+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001350s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013766s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000423s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041808s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000774s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000571s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002911s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001138s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2015-10-15T14:28:27+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/8.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000939s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012602s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000442s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043558s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001075s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000891s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000545s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003674s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000938s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001069s ]
+
+[ 2015-10-15T14:28:28+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/11.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000892s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013169s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000426s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047077s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001080s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000901s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000664s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004159s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001087s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2015-10-15T14:28:29+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/14.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000896s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011156s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000371s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.038987s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039182s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000721s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000550s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002568s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000845s ]
+
+[ 2015-10-15T14:28:46+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/14.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001637s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.016613s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 14 )  [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000392s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041998s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001313s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001043s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003988s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000723s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2015-10-15T14:28:47+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/14.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001603s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012890s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 14 )  [ RunTime:0.000257s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000353s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035093s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000710s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000551s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002511s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000843s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2015-10-15T14:28:59+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/14.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000835s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011371s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 14 )  [ RunTime:0.000333s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000356s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044142s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000995s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000616s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000418s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002998s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2015-10-15T14:29:02+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/10.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000929s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002658s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013621s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 10 )  [ RunTime:0.000252s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000424s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041624s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000905s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000691s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000433s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000563s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002896s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000821s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000908s ]
+
+[ 2015-10-15T14:29:03+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/14.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000901s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010439s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 14 )  [ RunTime:0.000263s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000378s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034728s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000864s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000776s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000883s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003476s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000858s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000973s ]
+
+[ 2015-10-15T14:29:37+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000760s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011659s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 1 )  [ RunTime:0.000276s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000388s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035937s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000717s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000545s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000399s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002582s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000837s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-10-15T14:29:43+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/14.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000749s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011210s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 14 )  [ RunTime:0.000286s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000369s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049693s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000942s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000699s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000439s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003069s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000744s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000846s ]
+
+[ 2015-10-15T14:29:47+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/12.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001074s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001256s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010706s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `id` = 12 )  [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000450s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046421s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000823s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000586s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000833s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002993s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000820s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2015-10-15T14:30:55+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/12.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001643s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001216s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.015605s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000443s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043155s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001177s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001086s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000702s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004233s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000704s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2015-10-15T14:30:56+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001301s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.017952s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000374s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051204s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000756s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000568s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003352s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000834s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2015-10-15T14:33:00+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001373s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001565s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001234s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013833s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000320s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000378s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043649s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000700s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000539s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003099s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000931s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-10-15T14:33:01+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001706s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013694s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000284s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000440s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043420s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000665s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000687s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000535s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003052s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2015-10-15T14:33:02+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000844s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000987s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000871s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010978s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000324s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000352s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033846s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000612s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000517s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002366s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000731s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000831s ]
+
+[ 2015-10-15T14:33:03+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001357s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001032s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.014323s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000818s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000376s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000739s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000519s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000397s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002566s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000777s ]
+
+[ 2015-10-15T14:33:03+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/7.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000901s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002336s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009426s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000402s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041109s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041378s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001029s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000712s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000864s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003569s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001114s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001251s ]
+
+[ 2015-10-15T14:34:47+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001263s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001167s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012301s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000474s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033443s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033554s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000712s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000516s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002416s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-10-15T14:34:48+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001007s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003222s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013056s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000351s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040035s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000744s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000534s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000403s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002652s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000793s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2015-10-15T14:35:29+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001235s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001425s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010922s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000371s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000394s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035195s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000736s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000420s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002490s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000790s ]
+
+[ 2015-10-15T14:35:38+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001309s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001485s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.017792s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000505s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000354s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043360s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001580s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001004s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000625s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000880s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004557s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000848s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2015-10-15T14:35:40+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001092s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001259s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013529s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000436s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043885s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000756s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000700s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000525s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003252s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000811s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2015-10-15T14:35:44+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000795s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012097s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000339s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000369s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033961s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000692s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000459s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000369s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002380s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2015-10-15T14:36:16+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000832s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000954s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013252s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000314s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000503s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.044561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044699s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000892s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000777s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000540s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003202s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000670s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2015-10-15T14:36:18+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003314s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003811s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013975s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000296s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000453s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043738s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043904s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000902s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000550s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000425s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000603s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002796s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-10-15T14:36:20+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001037s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.015198s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000372s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000470s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.057209s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057426s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000899s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000687s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000582s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000992s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003584s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001083s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001263s ]
+
+[ 2015-10-15T14:36:32+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002666s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003194s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012372s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000399s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040941s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000705s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000593s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000513s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002781s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000703s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2015-10-15T14:36:35+08:00 ] 0.0.0.0 /wenda/index.php/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000799s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000907s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.011143s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000384s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward asc LIMIT 10   [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.009027s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000353s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000270s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000259s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000254s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000229s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000263s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000241s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000267s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000340s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000286s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000253s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000311s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.088456s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088598s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000867s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000726s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000444s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003108s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001156s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2015-10-15T14:36:36+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001789s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.016330s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000432s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052049s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000984s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000899s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000562s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003664s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001262s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2015-10-15T14:36:40+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/2.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000963s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013928s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000310s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000427s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037386s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000742s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000572s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000646s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002744s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000695s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2015-10-15T14:36:42+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000926s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010696s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000426s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037160s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000844s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000557s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000361s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002757s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000913s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001015s ]
+
+[ 2015-10-15T14:36:44+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/4.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001561s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001926s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013474s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000309s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000404s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040211s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000925s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000684s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000394s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000623s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002942s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001062s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001213s ]
+
+[ 2015-10-15T14:36:52+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/5.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001554s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001785s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001231s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011877s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000336s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000377s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046901s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000719s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000528s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000381s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002525s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000690s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000794s ]
+
+[ 2015-10-15T14:37:00+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/58.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000992s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.015354s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 58 )  [ RunTime:0.000414s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.001288s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044146s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000764s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000504s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000396s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002513s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000820s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2015-10-15T14:38:00+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/58.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001322s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001551s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.013584s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 58 )  [ RunTime:0.000289s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 58 )  [ RunTime:0.000229s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000441s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.037021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037142s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000644s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000500s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000467s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002924s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000684s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-10-15T14:38:01+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/58.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000877s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011692s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 58 )  [ RunTime:0.000264s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 58 )  [ RunTime:0.000226s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000380s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032810s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032940s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000629s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000455s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002510s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000696s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-10-15T14:38:03+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001036s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000807s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011037s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000341s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000429s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036289s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000597s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000521s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002348s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2015-10-15T14:38:04+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/15.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001201s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001404s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010665s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 15 )  [ RunTime:0.000373s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000379s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033013s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001091s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000825s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000691s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003642s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000749s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2015-10-15T14:38:05+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/181.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000879s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.010515s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 181 )  [ RunTime:0.000262s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 181 )  [ RunTime:0.000195s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000388s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033464s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000650s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000504s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000358s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002487s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000681s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000801s ]
+
+[ 2015-10-15T14:38:23+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/181.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001052s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.012778s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 181 )  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 181 )  [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000383s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033062s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000667s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000465s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000366s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000595s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002401s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000853s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2015-10-15T14:38:25+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001113s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011960s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000385s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.032770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032963s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000724s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000483s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000359s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002403s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-10-15T14:38:26+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/15.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001375s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001344s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.014699s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 15 )  [ RunTime:0.000296s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000411s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046955s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001472s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000616s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004174s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001035s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001171s ]
+
+[ 2015-10-15T14:38:27+08:00 ] 0.0.0.0 /wenda/index.php/List/index/id/181.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000941s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: 建议使用I方法替代_get
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.011598s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 181 )  [ RunTime:0.000318s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 181 )  [ RunTime:0.000262s ]
+INFO: [ view_parse ] --START--
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000435s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034730s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000691s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000507s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000346s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002420s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000743s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000847s ]
+

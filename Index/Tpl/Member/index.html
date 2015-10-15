@@ -1,0 +1,106 @@
+
+<include file='Common:header' />
+<body>
+    
+    <include file='Common:top' />
+    <!-- 主题部分开始 -->
+    <div class="container">
+        <div class="row">
+            <!-- 左边开始 -->
+            <div class="col-md-3 panel panel-default">
+                <div class="row">
+                    <br>
+                    <div class="col-md-5 text-center">
+                        <img src="../images/1.jpg" height='50px' width='50px'>
+                    </div>
+                    <div class="col-md-7">
+                        <p>{$user.username}</p>
+                        <p class="muted">金币：{$user.point}</p>
+                        <p class="muted">经验值：{$user.exp}</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4 text-center">回答数
+                        <p>{$user.answer}</p>
+                    </div>
+                    <div class="col-md-4 text-center">采纳率
+                        <p>{$user.adopt}</p>
+                    </div>
+                    <div class="col-md-4 text-center">提问数
+                        <p>{$user.ask}</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">我的首页</a>
+                    <a href="#" class="list-group-item">我的提问</a>
+                    <a href="#" class="list-group-item">我的回答</a>
+                    <a href="#" class="list-group-item">我的等级</a>
+                    <a href="#" class="list-group-item">我的金币</a>
+                </div>
+            </div>
+            <!-- 左边结束 -->
+            <!-- 右边开始 -->
+            <div class="col-md-9">
+                <h4 class="text-muted">我的首页</h4>
+                <div class="row">
+                    <div class="col-md-4">金币：{$user.point}</div>
+                    <div class="col-md-4">经验值：{$user.exp}</div>
+                    <div class="col-md-4">采纳率：{$user.adopt}</div>
+                </div>
+                <br>
+                <small>我的提问 <span class="text-muted">(共3条)</span></small>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">标题</div>
+                    <div class="col-md-2">回答</div>
+                    <div class="col-md-4">更新时间</div>
+                </div>
+                <br>
+                <foreach name='ask' item='v'>
+                    <div class="row">
+                        <div class="col-md-6">{$v.content} <span class="text-muted">[{$v.name}]</span></div>
+                        <div class="col-md-2">{$v.answer}</div>
+                        <div class="col-md-4">{$v.time}</div>
+                    </div>
+                    <br>
+                </foreach>
+                <hr>
+                <small>我的回答 <span class="text-muted">(共3条)</span></small>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">标题</div>
+                    <div class="col-md-2">回答</div>
+                    <div class="col-md-4">更新时间</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
+                    <div class="col-md-2">0</div>
+                    <div class="col-md-4">刚刚</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
+                    <div class="col-md-2">0</div>
+                    <div class="col-md-4">刚刚</div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
+                    <div class="col-md-2">0</div>
+                    <div class="col-md-4">刚刚</div>
+                </div>
+            </div>
+            <!-- 右边结束 -->
+        </div>
+    </div>
+    <!-- 主题部分结束 -->
+    <hr>
+    <!-- 底部开始 -->
+    <include file='Common:footer' />
+    <!-- 底部结束 -->
+</body>
+
+</html>

@@ -71,97 +71,72 @@
     <!-- 主题部分开始 -->
     <div class="container">
         <div class="row">
-            <?php
- $db=M('category'); $category=$db->where(array('pid'=>0))->select(); foreach($category as $k=>$v){ $category[$k]['child']=$db->where(array('pid'=>$v['id']))->select(); } ?>
-
-<!-- 左边开始 -->
-            <div class="col-md-3 panel panel-default">
-                <?php if(is_array($category)): foreach($category as $key=>$v): ?><div class="row">
-                        <div class="col-md-12"><a href="<?php echo U('List/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></div>
-                        <?php $__FOR_START_11892__=0;$__FOR_END_11892__=3;for($i=$__FOR_START_11892__;$i < $__FOR_END_11892__;$i+=1){ ?><div class="col-md-3"><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></div><?php } ?>
-                        <div class="col-md-3">
-                            <!-- Single button -->
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <?php $__FOR_START_20381__=3;$__FOR_END_20381__=count($v['child']);for($i=$__FOR_START_20381__;$i < $__FOR_END_20381__;$i+=1){ ?><li><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></li><?php } ?>  
-                                </ul>
+            <!-- 左边开始 -->
+            <div class="col-md-8">
+                <p>全部分类 > 电脑/网络 > 电脑知识 > 电脑配置 </p>
+                <p>分类查找</p>
+                <div class="row">
+                    <?php if(is_array($category_list)): foreach($category_list as $key=>$v): ?><div class="col-md-4"><a href="<?php echo U('List/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></div><?php endforeach; endif; ?>
+                </div>
+                <!-- 标签页开始 -->
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">待解决</a></li>
+                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">以解决</a></li>
+                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">高悬赏</a></li>
+                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">零回答</a></li>
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">标题</div>
+                                <div class="col-md-2 text-right text-muted">回答数</div>
+                                <div class="col-md-4 text-right text-muted">时间</div>
                             </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
+                                <div class="col-md-2 text-right text-muted">0回答</div>
+                                <div class="col-md-4 text-right text-muted">0回答</div>
+                            </div>
+                            <br>
                         </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">.2..</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">..3.</div>
+                        <div role="tabpanel" class="tab-pane" id="settings">..4.</div>
                     </div>
-                    <hr><?php endforeach; endif; ?>
+                </div>
+                <!-- 标签页结束 -->
             </div>
             <!-- 左边结束 -->
-            <!-- 中间开始 -->
-            <div class="col-md-5">
-                <!-- 轮播开始 -->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="__PUBLIC__/images/1.jpg" alt="唯美图片1">
-                            <div class="carousel-caption">
-                                唯美图片1
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="__PUBLIC__/images/2.jpg" alt="唯美图片2">
-                            <div class="carousel-caption">
-                                唯美图片2
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="__PUBLIC__/images/3.jpg" alt="唯美图片4">
-                            <div class="carousel-caption">
-                                唯美图片3
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                <!-- 轮播结束 -->
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">待解决问题</div>
-                    <div class="col-md-6 text-right">更多>></div>
-                </div>
-                <hr>
-                <?php if(is_array($ask_unsolve)): foreach($ask_unsolve as $key=>$v): ?><div class="row">
-                        <div class="col-md-6"><?php echo ($v["content"]); ?></div>
-                        <div class="col-md-6 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
-                    </div>
-                    <br><?php endforeach; endif; ?>
-                <!-- 高悬赏问题开始 -->
-                <hr>
-                <div class="row">
-                    <div class="col-md-6">高悬赏问题</div>
-                    <div class="col-md-6 text-right">更多>></div>
-                </div>
-                <hr>
-                <?php if(is_array($ask_unsolve)): foreach($ask_unsolve as $key=>$v): ?><div class="row">
-                        <div class="col-md-6"><?php echo ($v["content"]); ?></div>
-                        <div class="col-md-6 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
-                    </div>
-                    <br><?php endforeach; endif; ?>
-                <!-- 高悬赏问题结束 -->
-            </div>
-            <!-- 中间结束 -->
+            <!-- 右边开始 -->
             <!-- 右边开始 -->
 <div class="col-md-4  panel panel-default">
     <hr>
@@ -283,9 +258,11 @@
 </div>
 <!-- 右边结束 -->
 
+            <!-- 右边结束 -->
         </div>
     </div>
     <!-- 主题部分结束 -->
+    <!-- 底部开始 -->
     <!-- 底部开始 -->
 <div class="panel panel-default">
     <div class="panel-footer text-center">
@@ -359,6 +336,7 @@
 </div>
 <!-- 注册弹出框结束 -->
 
+    <!-- 底部结束 -->
 </body>
 
 </html>

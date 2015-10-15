@@ -24,6 +24,8 @@
 			$ask['uid']=session('uid');
 			p($ask);
 			if(M('ask')->add($ask)){
+				M('user')->where(array('id'=>session('uid')))->setInc('ask');
+				M('user')->where(array('id'=>session('uid')))->setInc('exp',C('LV_ASK'));
 				$this->success('提问成功');
 			}else{
 				$this->error('提问失败');
