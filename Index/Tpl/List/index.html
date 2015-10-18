@@ -32,41 +32,67 @@
                                 <div class="col-md-2 text-right text-muted">回答数</div>
                                 <div class="col-md-4 text-right text-muted">时间</div>
                             </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                                <div class="col-md-2 text-right text-muted">0回答</div>
-                                <div class="col-md-4 text-right text-muted">0回答</div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                                <div class="col-md-2 text-right text-muted">0回答</div>
-                                <div class="col-md-4 text-right text-muted">0回答</div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                                <div class="col-md-2 text-right text-muted">0回答</div>
-                                <div class="col-md-4 text-right text-muted">0回答</div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                                <div class="col-md-2 text-right text-muted">0回答</div>
-                                <div class="col-md-4 text-right text-muted">0回答</div>
-                            </div>
-                            <br>
-                            <div class="row">
-                                <div class="col-md-6">为什么我的PHP处理不了图像？？</div>
-                                <div class="col-md-2 text-right text-muted">0回答</div>
-                                <div class="col-md-4 text-right text-muted">0回答</div>
-                            </div>
+                            <foreach name='ask_unsolve' item='v'>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
+                                    <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                </div>
+                            </foreach>
                             <br>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="profile">.2..</div>
-                        <div role="tabpanel" class="tab-pane" id="messages">..3.</div>
-                        <div role="tabpanel" class="tab-pane" id="settings">..4.</div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">标题</div>
+                                <div class="col-md-2 text-right text-muted">回答数</div>
+                                <div class="col-md-4 text-right text-muted">时间</div>
+                            </div>
+                            <foreach name='ask_solve' item='v'>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
+                                    <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                </div>
+                            </foreach>
+                            <br>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">标题</div>
+                                <div class="col-md-2 text-right text-muted">回答数</div>
+                                <div class="col-md-4 text-right text-muted">时间</div>
+                            </div>
+                            <foreach name='ask_high_reward' item='v'>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
+                                    <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                </div>
+                            </foreach>
+                            <br>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="settings">
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-6">标题</div>
+                                <div class="col-md-2 text-right text-muted">回答数</div>
+                                <div class="col-md-4 text-right text-muted">时间</div>
+                            </div>
+                            <foreach name='ask_zero_answer' item='v'>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
+                                    <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                </div>
+                            </foreach>
+                            <br>
+                        </div>
                     </div>
                 </div>
                 <!-- 标签页结束 -->

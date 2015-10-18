@@ -16,7 +16,9 @@
     <script src="__PUBLIC__/js/index_common.js"></script>
 </head>
 
+
 <body>
+    <!-- 顶部开始 -->
     <!-- 导航开始 -->
     <div class="container">
         <nav class="navbar navbar-default">
@@ -68,90 +70,44 @@
         </nav>
     </div>
     <!-- 二级导航结束 -->
+    <!-- 顶部结束 -->
+    
     <!-- 主题部分开始 -->
     <div class="container">
         <div class="row">
             <!-- 左边开始 -->
             <div class="col-md-8">
                 <p>全部分类 > 电脑/网络 > 电脑知识 > 电脑配置 </p>
-                <p>分类查找</p>
+                <h3>待解决 <?php echo ($ask["content"]); ?></h3>
+                <br>
                 <div class="row">
-                    <?php if(is_array($category_list)): foreach($category_list as $key=>$v): ?><div class="col-md-4"><a href="<?php echo U('List/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></div><?php endforeach; endif; ?>
+                    <div class="col-md-4">涛涛</div>
+                    <div class="col-md-4"><?php echo ($ask["point"]); ?>分</div>
+                    <div class="col-md-4"><?php echo ($ask["time"]); ?></div>
                 </div>
-                <!-- 标签页开始 -->
-                <div>
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">待解决</a></li>
-                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">以解决</a></li>
-                        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">高悬赏</a></li>
-                        <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">零回答</a></li>
-                    </ul>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="home">
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-6">标题</div>
-                                <div class="col-md-2 text-right text-muted">回答数</div>
-                                <div class="col-md-4 text-right text-muted">时间</div>
+                <hr>
+                <p class="text-muted">我来回答</p>
+                <form action="" method="post">
+                    <textarea class="form-control" rows="3"></textarea>
+                    <br>
+                    <p class="text-right">
+                        <input type="submit" class="btn-success btn-lg" value="提交回答">
+                    </p>
+                </form>
+                <!-- 全部回答开始 -->
+                <p class="muted">全部回答 共3条</p>
+                <div class="row panel panel-default">
+                    <hr>
+                    <?php if(is_array($answer)): foreach($answer as $key=>$v): ?><div class="row">
+                            <div class="col-md-3 text-center">
+                                <img src="../images/1.jpg" alt="唯美图片1" height="50px" width='50px' />
+                                <p class='text-center'>涛涛</p>
                             </div>
-                            <?php if(is_array($ask_unsolve)): foreach($ask_unsolve as $key=>$v): ?><br>
-                                <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
-                                    <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
-                                    <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
-                                </div><?php endforeach; endif; ?>
-                            <br>
+                            <div class="col-md-9"><?php echo ($v["content"]); ?> <small class="text-muted text-lowercase">(<?php echo ($v["time"]); ?>)</small></div>
                         </div>
-                        <div role="tabpanel" class="tab-pane" id="profile">
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-6">标题</div>
-                                <div class="col-md-2 text-right text-muted">回答数</div>
-                                <div class="col-md-4 text-right text-muted">时间</div>
-                            </div>
-                            <?php if(is_array($ask_solve)): foreach($ask_solve as $key=>$v): ?><br>
-                                <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
-                                    <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
-                                    <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
-                                </div><?php endforeach; endif; ?>
-                            <br>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="messages">
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-6">标题</div>
-                                <div class="col-md-2 text-right text-muted">回答数</div>
-                                <div class="col-md-4 text-right text-muted">时间</div>
-                            </div>
-                            <?php if(is_array($ask_high_reward)): foreach($ask_high_reward as $key=>$v): ?><br>
-                                <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
-                                    <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
-                                    <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
-                                </div><?php endforeach; endif; ?>
-                            <br>
-                        </div>
-                        <div role="tabpanel" class="tab-pane" id="settings">
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-6">标题</div>
-                                <div class="col-md-2 text-right text-muted">回答数</div>
-                                <div class="col-md-4 text-right text-muted">时间</div>
-                            </div>
-                            <?php if(is_array($ask_zero_answer)): foreach($ask_zero_answer as $key=>$v): ?><br>
-                                <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
-                                    <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
-                                    <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
-                                </div><?php endforeach; endif; ?>
-                            <br>
-                        </div>
-                    </div>
+                        <hr><?php endforeach; endif; ?>
                 </div>
-                <!-- 标签页结束 -->
+                <!-- 全部回答结束 -->
             </div>
             <!-- 左边结束 -->
             <!-- 右边开始 -->
