@@ -1,15 +1,13 @@
 
 <?php
 	class AnswerUserViewModel extends ViewModel{
-		Protected $viewField=array(
-			'ask'=>array(
-				'id'=>'ask_id',
+		Protected $viewFields=array(
+			'answer'=>array(
+				'id',
 				'content',
-				'reward',
-				'solve',
 				'time',
-				'answer',
-				'_type'=>'LEFT'
+				'adopt',
+				'_type'=>'LEFT',
 				),
 			'user'=>array(
 				'id'=>'user_id',
@@ -20,8 +18,8 @@
 				'ask',
 				'point',
 				'exp',
-				'_on'=>'user.user_id=ask.uid'
-				)
+				'_on'=>'user.id=answer.uid',
+				),
 			);
 	}
 ?>

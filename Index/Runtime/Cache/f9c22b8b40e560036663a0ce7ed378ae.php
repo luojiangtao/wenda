@@ -78,7 +78,7 @@
             <div class="col-md-3 panel panel-default">
                 <?php if(is_array($category)): foreach($category as $key=>$v): ?><div class="row">
                         <div class="col-md-12"><a href="<?php echo U('List/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></div>
-                        <?php $__FOR_START_3170__=0;$__FOR_END_3170__=3;for($i=$__FOR_START_3170__;$i < $__FOR_END_3170__;$i+=1){ ?><div class="col-md-3"><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></div><?php } ?>
+                        <?php $__FOR_START_5853__=0;$__FOR_END_5853__=3;for($i=$__FOR_START_5853__;$i < $__FOR_END_5853__;$i+=1){ ?><div class="col-md-3"><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></div><?php } ?>
                         <div class="col-md-3">
                             <!-- Single button -->
                             <div class="btn-group">
@@ -86,7 +86,7 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <?php $__FOR_START_20979__=3;$__FOR_END_20979__=count($v['child']);for($i=$__FOR_START_20979__;$i < $__FOR_END_20979__;$i+=1){ ?><li><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></li><?php } ?>  
+                                    <?php $__FOR_START_16978__=3;$__FOR_END_16978__=count($v['child']);for($i=$__FOR_START_16978__;$i < $__FOR_END_16978__;$i+=1){ ?><li><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></li><?php } ?>  
                                 </ul>
                             </div>
                         </div>

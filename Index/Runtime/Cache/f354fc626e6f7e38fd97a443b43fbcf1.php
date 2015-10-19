@@ -16,7 +16,6 @@
     <script src="__PUBLIC__/js/index_common.js"></script>
 </head>
 
-
 <body>
     <!-- 顶部开始 -->
     <!-- 导航开始 -->
@@ -71,7 +70,6 @@
     </div>
     <!-- 二级导航结束 -->
     <!-- 顶部结束 -->
-    
     <!-- 主题部分开始 -->
     <div class="container">
         <div class="row">
@@ -79,39 +77,61 @@
             <div class="col-md-8">
                 <p>全部分类 > 电脑/网络 > 电脑知识 > 电脑配置 </p>
                 <h3>待解决 <?php echo ($ask["content"]); ?></h3>
+                <span class="glyphicon glyphicon-yen text-muted" aria-hidden="true">123</span>
+                <br>
                 <br>
                 <div class="row">
-                    <div class="col-md-4">涛涛</div>
-                    <div class="col-md-4"><?php echo ($ask["point"]); ?>分</div>
+                    <div class="col-md-4"><?php echo ($ask["username"]); ?></div>
+                    <div class="col-md-4"><?php echo ($ask["exp"]); ?></div>
                     <div class="col-md-4"><?php echo ($ask["time"]); ?></div>
                 </div>
                 <hr>
-                <p class="text-muted">我来回答</p>
-                <form action="" method="post">
-                    <textarea class="form-control" rows="3"></textarea>
-                    <br>
-                    <p class="text-right">
-                        <input type="submit" class="btn-success btn-lg" value="提交回答">
-                    </p>
-                </form>
-                <!-- 全部回答开始 -->
-                <p class="muted">全部回答 共3条</p>
-                <div class="row panel panel-default">
-                    <hr>
-                    <?php if(is_array($answer)): foreach($answer as $key=>$v): ?><div class="row">
-                            <div class="col-md-3 text-center">
-                                <img src="../images/1.jpg" alt="唯美图片1" height="50px" width='50px' />
-                                <p class='text-center'>涛涛</p>
-                            </div>
-                            <div class="col-md-9"><?php echo ($v["content"]); ?> <small class="text-muted text-lowercase">(<?php echo ($v["time"]); ?>)</small></div>
+                <?php if(isset($_SESSION['uid']) AND (!$ask['solve']) AND $_SESSION['uid'] != $ask['user_id']): ?><p class="text-muted">我来回答</p>
+                    <form action="<?php echo U('Show/runAddAnswer');?>" method="post">
+                        <textarea class="form-control" name='content' rows="3" required></textarea>
+                        <input type="hidden" name="aid" value="<?php echo ($ask["id"]); ?>">
+                        <br>
+                        <p class="text-right">
+                            <input type="submit" class="btn-success btn-lg" value="提交回答">
+                        </p>
+                    </form><?php endif; ?>
+                <!-- 满意回答开始 -->
+                <?php if(isset($answer_adopt)): ?><h3>满意回答</h3>
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <a href="<?php echo U('Member/index',array('uid'=>$answer_adopt['user_id']));?>"><img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' /></a>
+                            <p class='text-center'><a href="<?php echo U('Member/index',array('uid'=>$answer_adopt['user_id']));?>"><?php echo ($answer_adopt["username"]); ?></a></p>
                         </div>
-                        <hr><?php endforeach; endif; ?>
-                </div>
-                <!-- 全部回答结束 -->
+                        <div class="col-md-9">
+                            <?php echo ($answer_adopt["content"]); ?> <small class="text-muted text-lowercase">(<?php echo ($answer_adopt["time"]); ?>)</small>
+                        </div>
+                    </div><?php endif; ?>
+            <!-- 满意回答结束 -->
+            <!-- 全部回答开始 -->
+            <p class="muted">全部回答 共3条</p>
+            <div class="row panel panel-default">
+                <hr>
+                <?php if(is_array($answer)): foreach($answer as $key=>$v): ?><div class="row">
+                        <div class="col-md-3 text-center">
+                            <a href="<?php echo U('Member/index',array('uid'=>$v['user_id']));?>"><img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' /></a>
+                            <p class='text-center'><a href="<?php echo U('Member/index',array('uid'=>$v['user_id']));?>"><?php echo ($v["username"]); ?></a></p>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-10"><?php echo ($v["content"]); ?> <small class="text-muted text-lowercase">(<?php echo ($v["time"]); ?>)</small></div>
+                                <div class="col-md-2">
+                                    <?php if(isset($_SESSION['uid']) && $_SESSION['uid']==$ask['user_id'] && !$ask['solve']): ?><a href="<?php echo U('Show/adopt',array('id'=>$v['id'],'aid'=>$ask['id'],'uid'=>$v['user_id']));?>" class='btn btn-warning btn-sm'>采纳</a><?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr><?php endforeach; endif; ?>
             </div>
-            <!-- 左边结束 -->
-            <!-- 右边开始 -->
-            <!-- 右边开始 -->
+            <!-- 全部回答结束 -->
+        </div>
+        <!-- 左边结束 -->
+        <!-- 右边开始 -->
+        <!-- 右边开始 -->
 <div class="col-md-4  panel panel-default">
     <hr>
     <?php if(!isset($_SESSION['username'])): ?><div class="row">
@@ -232,8 +252,8 @@
 </div>
 <!-- 右边结束 -->
 
-            <!-- 右边结束 -->
-        </div>
+        <!-- 右边结束 -->
+    </div>
     </div>
     <!-- 主题部分结束 -->
     <!-- 底部开始 -->

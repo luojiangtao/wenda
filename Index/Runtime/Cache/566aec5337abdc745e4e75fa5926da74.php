@@ -98,7 +98,7 @@
                             </div>
                             <?php if(is_array($ask_unsolve)): foreach($ask_unsolve as $key=>$v): ?><br>
                                 <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
+                                    <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a></div>
                                     <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
                                     <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
                                 </div><?php endforeach; endif; ?>
@@ -113,7 +113,7 @@
                             </div>
                             <?php if(is_array($ask_solve)): foreach($ask_solve as $key=>$v): ?><br>
                                 <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
+                                    <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a></div>
                                     <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
                                     <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
                                 </div><?php endforeach; endif; ?>
@@ -128,7 +128,7 @@
                             </div>
                             <?php if(is_array($ask_high_reward)): foreach($ask_high_reward as $key=>$v): ?><br>
                                 <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
+                                    <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a></div>
                                     <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
                                     <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
                                 </div><?php endforeach; endif; ?>
@@ -143,7 +143,7 @@
                             </div>
                             <?php if(is_array($ask_zero_answer)): foreach($ask_zero_answer as $key=>$v): ?><br>
                                 <div class="row">
-                                    <div class="col-md-6"><?php echo ($v["content"]); ?></div>
+                                    <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a></div>
                                     <div class="col-md-2 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
                                     <div class="col-md-4 text-right text-muted"><?php echo ($v["time"]); ?></div>
                                 </div><?php endforeach; endif; ?>
