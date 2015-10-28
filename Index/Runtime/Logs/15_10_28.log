@@ -1,0 +1,106 @@
+[ 2015-10-28T11:46:03+08:00 ] 0.0.0.0 /wenda/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.034013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034175s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.031631s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.018100s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward DESC LIMIT 10   [ RunTime:0.024732s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.030687s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.040958s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000358s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000536s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000546s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000434s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000316s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000216s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000230s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000239s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000225s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000235s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000255s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000234s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000231s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000468s ]
+SQL: SELECT `u`.`id` AS `id`, `username`, `face`, `exp`, `answer`, `u`.`adopt` AS `adopt` FROM `hd_answer` `a` LEFT JOIN `hd_user` `u` ON `a`.`uid` = `u`.`id` WHERE `time` > 1445961600 GROUP BY `username` ORDER BY `answer` DESC LIMIT 1 [ RunTime:0.152298s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 212 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 222 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 228 行.
+NOTIC: [8] Undefined index: adopt D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 231 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 231 行.
+NOTIC: [2] Division by zero D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 231 行.
+SQL: SELECT `u`.`id` AS `id`, `username`, `face`, `exp`, `answer`, `u`.`adopt` AS `adopt` FROM `hd_answer` `a` LEFT JOIN `hd_user` `u` ON `a`.`uid` = `u`.`id` WHERE `time` > 1445961600 GROUP BY `username` ORDER BY `answer` DESC LIMIT 1 [ RunTime:0.000500s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 237 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 239 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 242 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 248 行.
+NOTIC: [8] Undefined index: adopt D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 251 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 251 行.
+NOTIC: [2] Division by zero D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 251 行.
+SQL: SELECT `id`, `username`, `answer` FROM `hd_user` GROUP BY `username` ORDER BY `answer` DESC LIMIT 10 [ RunTime:0.000597s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.612712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.612825s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.012386s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.023752s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003572s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.012101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.052231s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.006838s ]
+INFO: [ view_end ] --END-- [ RunTime:0.007020s ]
+
+[ 2015-10-28T15:24:51+08:00 ] 0.0.0.0 /wenda/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `hd_ask` [ RunTime:0.086303s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) LIMIT 10   [ RunTime:0.000424s ]
+SQL: SELECT * FROM `hd_ask` WHERE ( `solve` = 0 ) ORDER BY reward DESC LIMIT 10   [ RunTime:0.004309s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.003139s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.007017s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000322s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 1 )  [ RunTime:0.000258s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 2 )  [ RunTime:0.000336s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 3 )  [ RunTime:0.000284s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 4 )  [ RunTime:0.000279s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 5 )  [ RunTime:0.000248s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 6 )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 7 )  [ RunTime:0.000293s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 8 )  [ RunTime:0.000329s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 9 )  [ RunTime:0.000294s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 10 )  [ RunTime:0.000271s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 11 )  [ RunTime:0.000269s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 12 )  [ RunTime:0.000391s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 13 )  [ RunTime:0.000381s ]
+SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 14 )  [ RunTime:0.000517s ]
+SQL: SELECT `u`.`id` AS `id`, `username`, `face`, `exp`, `answer`, `u`.`adopt` AS `adopt` FROM `hd_answer` `a` LEFT JOIN `hd_user` `u` ON `a`.`uid` = `u`.`id` WHERE `time` > 1445961600 GROUP BY `username` ORDER BY `answer` DESC LIMIT 1 [ RunTime:0.010862s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 212 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 222 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 228 行.
+NOTIC: [8] Undefined index: adopt D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 231 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 231 行.
+NOTIC: [2] Division by zero D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 231 行.
+SQL: SELECT `u`.`id` AS `id`, `username`, `face`, `exp`, `answer`, `u`.`adopt` AS `adopt` FROM `hd_answer` `a` LEFT JOIN `hd_user` `u` ON `a`.`uid` = `u`.`id` WHERE `time` > 1445961600 GROUP BY `username` ORDER BY `answer` DESC LIMIT 1 [ RunTime:0.000518s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 237 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 239 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 242 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 248 行.
+NOTIC: [8] Undefined index: adopt D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 251 行.
+NOTIC: [8] Undefined index: answer D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 251 行.
+NOTIC: [2] Division by zero D:\wamp\www\wenda\Index\Runtime\Cache\f9c22b8b40e560036663a0ce7ed378ae.php 第 251 行.
+SQL: SELECT `id`, `username`, `answer` FROM `hd_user` GROUP BY `username` ORDER BY `answer` DESC LIMIT 10 [ RunTime:0.000696s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.081487s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081634s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000862s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000587s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000457s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002820s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000644s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000728s ]
+

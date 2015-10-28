@@ -68,9 +68,9 @@
                     <div class="col-md-6 text-right">更多>></div>
                 </div>
                 <hr>
-                <foreach name='ask_unsolve' item='v'>
+                <foreach name='ask_high_reward' item='v'>
                     <div class="row">
-                        <div class="col-md-6">{$v.content}</div>
+                        <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
                         <div class="col-md-6 text-right text-muted">{$v.answer}回答</div>
                     </div>
                     <br>

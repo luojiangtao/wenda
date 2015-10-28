@@ -72,7 +72,7 @@
     <div class="container">
         <div class="row">
             <form action="<?php echo U('Ask/runAddAsk');?>" method="post">
-                <input type="hidden" name='cid' value='0'/>
+                <input type="hidden" name='cid' value='0' />
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <h3>向网友提问</h3>
@@ -81,20 +81,20 @@
                         <div class="col-md-4">
                             <span class='btn btn-xs btn-warning select_category' data-toggle="modal" data-target="#category">选择分类</span>
                         </div>
-                        <div class="col-md-4 text-right">我的金币：0</div>
-                        <div class="col-md-4 text-right">悬赏
-                            <select name="reward">
-                                <option value="0">0</option>
-                                <option value="5">5</option>
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                                <option value="30">30</option>
-                                <option value="50">50</option>
-                                <option value="80">80</option>
-                                <option value="100">100</option>
-                            </select>
-                        </div>
+                        <?php if(isset($_SESSION['uid'])): ?><div class="col-md-4 text-right">我的金币：<span class="myreward"><?php echo ($point); ?></span></div>
+                            <div class="col-md-4 text-right">悬赏
+                                <select name="reward">
+                                    <option value="0">0</option>
+                                    <option value="5">5</option>
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="50">50</option>
+                                    <option value="80">80</option>
+                                    <option value="100">100</option>
+                                </select>
+                            </div><?php endif; ?>
                     </div>
                     <br>
                     <p class="text-right">

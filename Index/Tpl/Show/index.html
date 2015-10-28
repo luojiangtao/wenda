@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-md-4">{$ask.username}</div>
                     <div class="col-md-4">{$ask.exp}</div>
-                    <div class="col-md-4">{$ask.time}</div>
+                    <div class="col-md-4">{$ask.time|time_format=###}</div>
                 </div>
                 <hr>
                 <if condition="isset($_SESSION['uid']) AND (!$ask['solve']) AND $_SESSION['uid'] != $ask['user_id']">
@@ -40,7 +40,7 @@
                             <p class='text-center'><a href="{:U('Member/index',array('uid'=>$answer_adopt['user_id']))}">{$answer_adopt.username}</a></p>
                         </div>
                         <div class="col-md-9">
-                            {$answer_adopt.content} <small class="text-muted text-lowercase">({$answer_adopt.time})</small>
+                            {$answer_adopt.content} <small class="text-muted text-lowercase">({$answer_adopt.time|time_format=###})</small>
                         </div>
                     </div>
             </if>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="col-md-10">{$v.content} <small class="text-muted text-lowercase">({$v.time})</small></div>
+                                <div class="col-md-10">{$v.content} <small class="text-muted text-lowercase">({$v.time|time_format=###})</small></div>
                                 <div class="col-md-2">
                                     <if condition="isset($_SESSION['uid']) && $_SESSION['uid']==$ask['user_id'] && !$ask['solve']">
                                         <a href="{:U('Show/adopt',array('id'=>$v['id'],'aid'=>$ask['id'],'uid'=>$v['user_id']))}" class='btn btn-warning btn-sm'>采纳</a>

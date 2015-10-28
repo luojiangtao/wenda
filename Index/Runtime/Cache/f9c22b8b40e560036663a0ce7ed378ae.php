@@ -78,7 +78,7 @@
             <div class="col-md-3 panel panel-default">
                 <?php if(is_array($category)): foreach($category as $key=>$v): ?><div class="row">
                         <div class="col-md-12"><a href="<?php echo U('List/index',array('id'=>$v['id']));?>"><?php echo ($v["name"]); ?></a></div>
-                        <?php $__FOR_START_5853__=0;$__FOR_END_5853__=3;for($i=$__FOR_START_5853__;$i < $__FOR_END_5853__;$i+=1){ ?><div class="col-md-3"><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></div><?php } ?>
+                        <?php $__FOR_START_14416__=0;$__FOR_END_14416__=3;for($i=$__FOR_START_14416__;$i < $__FOR_END_14416__;$i+=1){ ?><div class="col-md-3"><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></div><?php } ?>
                         <div class="col-md-3">
                             <!-- Single button -->
                             <div class="btn-group">
@@ -86,7 +86,7 @@
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <?php $__FOR_START_16978__=3;$__FOR_END_16978__=count($v['child']);for($i=$__FOR_START_16978__;$i < $__FOR_END_16978__;$i+=1){ ?><li><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></li><?php } ?>  
+                                    <?php $__FOR_START_2633__=3;$__FOR_END_2633__=count($v['child']);for($i=$__FOR_START_2633__;$i < $__FOR_END_2633__;$i+=1){ ?><li><a href="<?php echo U('List/index',array('id'=>$v['child'][$i]['id']));?>"><?php echo ($v['child'][$i]['name']); ?></a></li><?php } ?>  
                                 </ul>
                             </div>
                         </div>
@@ -154,8 +154,8 @@
                     <div class="col-md-6 text-right">更多>></div>
                 </div>
                 <hr>
-                <?php if(is_array($ask_unsolve)): foreach($ask_unsolve as $key=>$v): ?><div class="row">
-                        <div class="col-md-6"><?php echo ($v["content"]); ?></div>
+                <?php if(is_array($ask_high_reward)): foreach($ask_high_reward as $key=>$v): ?><div class="row">
+                        <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a></div>
                         <div class="col-md-6 text-right text-muted"><?php echo ($v["answer"]); ?>回答</div>
                     </div>
                     <br><?php endforeach; endif; ?>
@@ -174,35 +174,43 @@
             </div>
         </div>
         <?php else: ?>
+
+        <?php
+ $user=M('user')->where(array('id'=>session('uid')))->find(); ?>
+
         <div class="row">
             <hr>
             <div class="col-md-6 text-right">
-                <img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' />
+                <a href="<?php echo U('Member/index',array('uid'=>session('uid')));?>"><img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' /></a>
             </div>
             <div class="col-md-6">
-                <b>taotao</b>LV1
-                <br> 金币：0
-                <br> 经验值：0
+                <b><a href="<?php echo U('Member/index',array('uid'=>session('uid')));?>"><?php echo ($user["username"]); ?></a></b> LV<?php echo ($user["exp"]); ?>
+                <br> 金币：<?php echo ($user["point"]); ?>
+                <br> 经验值：<?php echo ($user["exp"]); ?>
                 <br>
             </div>
         </div>
         <br>
         <div class="row text-center">
             <div class="col-md-4">
-                <p>回答数</p>520
+                <p>回答数</p><?php echo ($user["answer"]); ?>
             </div>
             <div class="col-md-4">
-                <p>采纳率</p>80%
+                <p>采纳率</p><?php echo ($user["adopt"]); ?>
             </div>
             <div class="col-md-4">
-                <p>提问数</p>0
+                <p>提问数</p><?php echo ($user["ask"]); ?>
             </div>
         </div>
         <p class="text-center">
-            <button class="btn btn-sm">我的提问</button>
-            <button class="btn btn-sm">我的回答</button>
+            <button class="btn btn-sm btn-warning">我的提问</button>
+            <button class="btn btn-sm btn-warning">我的回答</button>
         </p><?php endif; ?>
     <hr>
+
+    <?php
+ $todayTime = strtotime(date('y-m-d')); $sql = 'SELECT `u`.`id` AS `id`, `username`, `face`, `exp`, `answer`, `u`.`adopt` AS `adopt` FROM `hd_answer` `a` LEFT JOIN `hd_user` `u` ON `a`.`uid` = `u`.`id` WHERE `time` > ' . $todayTime . ' GROUP BY `username` ORDER BY `answer` DESC LIMIT 1'; $answerOnThisDay = M()->query($sql); $starUser = $answerOnThisDay[0]; $starUser['level'] = exp_to_level($starUser['exp']); ?>
+
     <div class="row">
         <h4 class="text-center">问答之星</h4>
         <hr>
@@ -211,38 +219,40 @@
             <img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' />
         </div>
         <div class="col-md-6">
-            1LV
+            <?php echo ($starUser["username"]); ?> LV<?php echo ($starUser["level"]); ?>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-md-6 text-right">
-            回答数；520
+            回答数；<?php echo ($starUser["answer"]); ?>
         </div>
         <div class="col-md-6">
-            采纳率：80%
+            采纳率：<?php echo round($starUser['adopt'] / $starUser['answer'] * 100, 1);?>%
         </div>
     </div>
     <hr>
     <div class="row">
         <p class='text-center'>历史回答最多的人</p>
+        <?php 'SELECT `id`, `username`, `answer`, `face`, `answer`, `adopt` FROM `hd_user` GROUP BY `username` ORDER BY `answer` DESC LIMIT 1'; $result = M()->query($sql); $result = $result[0]; $result['level'] = exp_to_level($result['exp']); ?>
         <div class="col-md-6 text-right">
-            <img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' />
+            <a href="<?php echo U('Member/index', array('id' => $result['id']));?>"><img src="__PUBLIC__/images/1.jpg" alt="唯美图片1" height="50px" width='50px' /></a>
         </div>
         <div class="col-md-6">
-            1LV
+            <?php echo ($result["username"]); ?> LV<?php echo ($result["level"]); ?>
         </div>
     </div>
     <br>
     <div class="row">
         <div class="col-md-6 text-right">
-            回答数；520
+            回答数；<?php echo ($result["answer"]); ?>
         </div>
         <div class="col-md-6">
-            采纳率：80%
+            采纳率：<?php echo round($result['adopt'] / $result['answer'] * 100);?>%
         </div>
     </div>
     <hr>
+    <?php $sql = 'SELECT `id`, `username`, `answer` FROM `hd_user` GROUP BY `username` ORDER BY `answer` DESC LIMIT 10'; $result = M()->query($sql); ?>
     <div class="row">
         <h4 class="text-center">问答助人光荣榜</h4>
     </div>
@@ -257,28 +267,12 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-md-6 text-right">
-            涛涛
+                <?php if(is_array($result)): foreach($result as $key=>$v): ?><div class="col-md-6 text-right">
+            <a href="<?php echo U('Member/index', array('id' => $v['id']));?>"><?php echo ($v["username"]); ?></a>
         </div>
         <div class="col-md-6">
-            100
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 text-right">
-            涛涛
-        </div>
-        <div class="col-md-6">
-            100
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 text-right">
-            涛涛
-        </div>
-        <div class="col-md-6">
-            100
-        </div>
+            <?php echo ($v["answer"]); ?>
+        </div><?php endforeach; endif; ?>
     </div>
 </div>
 <!-- 右边结束 -->

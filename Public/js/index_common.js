@@ -36,4 +36,11 @@ $(function() {
     		return false;
     	}
     });
+    var opt = $('select[name=reward] option');
+    var reward=parseInt($('.myreward').html());
+    for(var i=0;i<opt.length;i++ ){
+        if(opt.eq(i).val()>reward){
+            opt.eq(i).attr('disabled','disabled');
+        }
+    }
 });

@@ -77,7 +77,7 @@
                 <div class="row">
                     <br>
                     <div class="col-md-5 text-center">
-                        <img src="../images/1.jpg" height='50px' width='50px'>
+                        <img src="__PUBLIC__/images/1.jpg" height='50px' width='50px'>
                     </div>
                     <div class="col-md-7">
                         <p><?php echo ($user["username"]); ?></p>
@@ -125,7 +125,7 @@
                 </div>
                 <br>
                 <?php if(is_array($ask)): foreach($ask as $key=>$v): ?><div class="row">
-                        <div class="col-md-6"><?php echo ($v["content"]); ?> <span class="text-muted">[<?php echo ($v["name"]); ?>]</span></div>
+                        <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a> <span class="text-muted">[<?php echo ($v["name"]); ?>]</span></div>
                         <div class="col-md-2"><?php echo ($v["answer"]); ?></div>
                         <div class="col-md-4"><?php echo ($v["time"]); ?></div>
                     </div>
@@ -139,23 +139,12 @@
                     <div class="col-md-4">更新时间</div>
                 </div>
                 <br>
-                <div class="row">
-                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
-                    <div class="col-md-2">0</div>
-                    <div class="col-md-4">刚刚</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
-                    <div class="col-md-2">0</div>
-                    <div class="col-md-4">刚刚</div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-6">大家吃饭没有？ <span class="text-muted">[Windows Vista]</span></div>
-                    <div class="col-md-2">0</div>
-                    <div class="col-md-4">刚刚</div>
-                </div>
+                <?php if(is_array($my_answer)): foreach($my_answer as $key=>$v): ?><div class="row">
+                        <div class="col-md-6"><a href="<?php echo U('Show/index',array('id'=>$v['id']));?>"><?php echo ($v["content"]); ?></a> <span class="text-muted">[<?php echo ($v["name"]); ?>]</span></div>
+                        <div class="col-md-2"><?php echo ($v["answer"]); ?></div>
+                        <div class="col-md-4"><?php echo ($v["time"]); ?></div>
+                    </div>
+                    <br><?php endforeach; endif; ?>
             </div>
             <!-- 右边结束 -->
         </div>

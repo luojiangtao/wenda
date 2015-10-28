@@ -37,7 +37,7 @@
                                 <div class="row">
                                     <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
                                     <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
-                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time|time_format=###}</div>
                                 </div>
                             </foreach>
                             <br>
@@ -54,7 +54,7 @@
                                 <div class="row">
                                     <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
                                     <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
-                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time|time_format=###}</div>
                                 </div>
                             </foreach>
                             <br>
@@ -71,7 +71,7 @@
                                 <div class="row">
                                     <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
                                     <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
-                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time|time_format=###}</div>
                                 </div>
                             </foreach>
                             <br>
@@ -88,7 +88,7 @@
                                 <div class="row">
                                     <div class="col-md-6"><a href="{:U('Show/index',array('id'=>$v['id']))}">{$v.content}</a></div>
                                     <div class="col-md-2 text-right text-muted">{$v.answer}回答</div>
-                                    <div class="col-md-4 text-right text-muted">{$v.time}</div>
+                                    <div class="col-md-4 text-right text-muted">{$v.time|time_format=###}</div>
                                 </div>
                             </foreach>
                             <br>

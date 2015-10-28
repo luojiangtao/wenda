@@ -2,8 +2,10 @@
 	class AskAction extends CommonAction{
 		public function index(){
 			$category=M('category')->where(array('pid'=>0))->select();
+			$point=M('user')->where(array('id'=>$_SESSION['uid']))->getField('point');
 
 			$this->category=$category;
+			$this->point=$point;
 			$this->display();
 		}
 		//根据传过来的id异步获取分类子分类
